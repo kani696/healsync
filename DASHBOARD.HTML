@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Monitoring Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="dashboard">
+  <div class="sidebar">
+    <h2>💙HEALSYNC</h2>
+    <button onclick="showSection('home')">🏠 Home</button>
+    <button onclick="showSection('doctor')">👩‍⚕️ Doctor Dashboard</button>
+    <button onclick="showSection('patient')">🧑‍🤝‍🧑 Patient Dashboard</button>
+    <button onclick="showSection('alerts')">🚨 Alerts</button>
+  </div>
+
+  <div class="main-content">
+    <!-- Home Section -->
+    <div id="home" class="section">
+      <h2>Welcome to the Patient Monitoring Platform 🏥</h2>
+      <p>This platform continuously monitors patients in hospitals, rooms, and home quarantine centers. 
+      Doctors can see real-time stats and alerts to take quick action. 💚💙</p>
+    </div>
+
+    <!-- Doctor Dashboard -->
+    <div id="doctor" class="section" style="display:none;">
+      <h2>👩‍⚕️ Doctor Dashboard</h2>
+      <div class="patients-grid">
+        <!-- 8 Patients Example -->
+        <div class="patient-card healthy">Patient 1 💚 Normal</div>
+        <div class="patient-card alert">Patient 2 🚨 Alert</div>
+        <div class="patient-card healthy">Patient 3 💙 Normal</div>
+        <div class="patient-card alert">Patient 4 🚨 Alert</div>
+        <div class="patient-card healthy">Patient 5 💚 Normal</div>
+        <div class="patient-card healthy">Patient 6 💙 Normal</div>
+        <div class="patient-card alert">Patient 7 🚨 Alert</div>
+        <div class="patient-card healthy">Patient 8 💚 Normal</div>
+      </div>
+    </div>
+
+    <!-- Patient Dashboard -->
+    <div id="patient" class="section" style="display:none;">
+      <h2>🧑‍🤝‍🧑 Patient Dashboard</h2>
+      <div id="patientsContainer"></div>
+    </div>
+
+    <!-- Alerts Section -->
+    <div id="alerts" class="section" style="display:none;">
+      <h2>🚨 Alerts</h2>
+      <div id="alertContainer"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

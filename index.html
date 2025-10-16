@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEALSYNC💙 Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-container">
+  <h2>HEALSYNC💙</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login() {
+  const user = document.getElementById('username').value;
+  const pass = document.getElementById('password').value;
+  if(user && pass){
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Please enter credentials ⚠️");
+  }
+}
+</script>
+</body>
+</html>

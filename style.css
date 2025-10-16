@@ -1,0 +1,14 @@
+body { margin:0; font-family: Arial, sans-serif; background:#f7f9fc; }
+.login-container { width:300px; margin:100px auto; padding:20px; border-radius:10px; background:#fff; box-shadow:0 0 10px #ccc; text-align:center; }
+input { width:80%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc; }
+button { padding:10px 20px; cursor:pointer; border:none; border-radius:5px; background: linear-gradient(to right,#00c6ff,#0072ff); color:white; font-weight:bold; }
+
+.dashboard { display:flex; height:100vh; }
+.sidebar { width:200px; background: linear-gradient(to bottom,#00c6ff,#0072ff); color:white; padding:20px; display:flex; flex-direction:column; }
+.sidebar button { background:none; border:none; color:white; padding:10px 0; cursor:pointer; text-align:left; font-size:16px; }
+.main-content { flex:1; padding:20px; overflow-y:auto; }
+.section { }
+.patients-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:10px; margin-top:10px; }
+.patient-card { padding:15px; border-radius:10px; font-weight:bold; }
+.healthy { background: lightgreen; }
+.alert { background: lightcoral; color:white; }
